@@ -12,9 +12,57 @@
     background-color: #5A58E7;
 }
 
+.box {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .box:hover {
-    box-shadow: 10px 10px lightblue;
+    border: 1px solid blue;
 }
-.tanvir{
-    box-shadow: 10px 5px 5px 5px #BFA9FF;
+
+.tanvir {
+    border-top: 5px solid #EACADA;
+    border-right: 8px solid #EDD6E5;
+    background-color: #EACADA;
 }
+
+.line2 {
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+.Details{
+    border: 1px solid black;
+}
+.Details:hover{
+    border: 1px solid #8787EE;
+}
+.input:hover{
+    border: 2px solid #8787EE;
+}
+.box1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.boxx{
+    position: relative;
+}
+.box2{
+    border: 2px dashed #FF1BA4;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+.subscribe{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+aside {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
