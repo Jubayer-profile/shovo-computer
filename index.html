@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shovo Computer</title>
+
+
+  <!-- tailwind & daisy UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8d7a5c6929.js" crossorigin="anonymous"></script>
+
+  <!-- custom color style -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- vanile css link -->
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+  <header class="container mx-auto">
+    <!-- navbar  -->
+    <nav class="bg-gradient-to-r from-[#D9EFFF] to-[#FEDDFF] rounded-t-lg p-2">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-2xl w-52 shadow-2xl text-xl font-medium">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Course</a></li>
+              <li><a>Photography</a></li>
+              <li><a>Bloge</a></li>
+            </ul>
+          </div>
+          <img src="image/Group 3 1.png" alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1  shadow-2xl rounded-2xl text-lg font-normal">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Course</a></li>
+            <li><a>Photography</a></li>
+            <li><a>Bloge</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-outline text-primary">Contact with us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section  -->
+    <section class="banner">
+      <div class="grid justify-items-center space-y-10">
+        <div
+          class="bg-gradient-to-r from-[#FED4FF] to-[#E5FFF4] ... flex items-center gap-5 mt-12  p-3 rounded-2xl lg:w-[400px]">
+          <i class="fa-solid fa-hands-clapping"></i>
+          <p>Welcome to Shuvo Computer </p>
+        </div>
+        <div class="text-center">
+          <h2 class="text-7xl font-extrabold text-[#053D92]">Find the best digital <br> services from us</h2>
+          <p class="text-lg font-medium  pt-10">Your Ultimate Destination for Premier Digital Services</p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10 items-center">
+          <div class="avatar-group -space-x-6 rtl:space-x-reverse">
+            <div class="avatar bg-white">
+              <div class="w-12">
+                <img src="image/Ellipse 6.png" />
+              </div>
+            </div>
+            <div class="avatar bg-white">
+              <div class="w-12 ">
+                <img src="image/image 2.png" />
+              </div>
+            </div>
+            <div class="avatar bg-white">
+              <div class="w-12 ">
+                <img src="image/image 1.png" />
+              </div>
+            </div>
+            <div class="avatar bg-white``">
+              <div class="w-12">
+                <img src="image/Frame 1261157601.png" />
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <h2 class="text-2xl font-bold text-orange-500">10K+</h2>
+            <p class="text-lg font-medium">Satisfied Client</p>
+          </div>
+          <button class="btn btn-active btn-primary font-bold text-lg">Get Services<i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="container mx-auto">
+    <!-- service section  -->
+    <section class="my-24">
+      <div class="flex flex-col lg:flex-row justify-between items-center">
+        <div>
+          <p class="text-[#5A58E7] font-normal text-lg bg-blue-100 p-2 rounded-2xl w-[200px] text-center">Our Services
+          </p>
+          <h2 class="text-5xl font-bold">Discover our stunning Services </h2>
+        </div>
+        <button class="btn btn-active btn-primary font-bold text-lg">View all services <i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <!-- card 1  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 29301.png" alt="">
+            <p class="text-xl font-medium">Printing Services</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2911.png" alt="">
+            <p class="text-xl font-medium">Visa Application</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3  -->
+        <div class="card bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2914.png" alt="">
+            <p class="text-xl font-medium">Airline tickets</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2918.png" alt="">
+            <p class="text-xl font-medium">Camera</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2920.png" alt="">
+            <p class="text-xl font-medium">Driving licence application</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 3082.png" alt="">
+            <p class="text-xl font-medium">All types of certificates</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 7  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 3080.png" alt="">
+            <p class="text-xl font-medium">Police Clearance</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 8  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2936.png" alt="">
+            <p class="text-xl font-medium">NID Card application</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 9  -->
+        <div class="card bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img src="image/Group 2937.png" alt="">
+            <p class="text-xl font-medium">Email scanning</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card 10  -->
+        <div class="card  bg-base-100 shadow-2xl card1">
+          <div class=" p-6 space-y-3">
+            <img class="" src="image/Vector.png" alt="">
+            <p class="text-xl font-medium">Money Transfer</p>
+            <div class="card-actions justify-star">
+              <button class="btn bg-transparent text-primary">Read more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leering section -->
+    <section class="my-24">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 items-center bg-gradient-to-r from-[#D9EFFF] to-[#FEDDFF] p-20 rounded-xl">
+        <div>
+          <h2 class="text-5xl font-bold mb-14">Start your <span class="text-[#FD6E5E]">Leering<br>journey</span> today!
+          </h2>
+          <button class="btn btn-active btn-primary font-bold text-lg">Get Course <i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div>
+          <img src="image/Group 2979.png" alt="">
+        </div>
+
+        <div>
+          <img src="image/Surface Laptop Studio.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- financial section  -->
+    <section>
+      <div class="text-center">
+        <p class="text-[#5A58E7] drop-shadow-2xl text-xl font-medium p-3">Financial</p>
+        <h2 class="text-5xl font-bold mb-14">Mobile financial service</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- frist  -->
+        <form class="max-w-sm mx-auto border-2 border-current border-solid drop-shadow-xl rounded-xl p-6 ">
+          <div class="flex justify-center gap-8 mb-5">
+            <img src="image/Group 2938.png" alt="">
+            <img src="image/Group 2939.png" alt="">
+          </div>
+          <h2 class="bg-gradient-to-r from-[#FED4FF] to-[#E5FFF4] ... p-2 rounded-lg mb-5">Bekash Number +8801778113262
+          </h2>
+          <div class="mb-5">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your
+              name*</label>
+            <input type="name" id="name"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="your name" required />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email*</label>
+            <input type="email" id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="name@flowbite.com" required />
+          </div>
+          <div class="mb-5">
+            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your personal bikas
+              number*</label>
+            <input type="number" id="number"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your number" required />
+          </div>
+          <div class="mb-5">
+            <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount*</label>
+            <input type="amount" id="repeat-password"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your amount" required />
+          </div>
+          <div class="flex items-start mb-5">
+            <div class="flex items-center h-5">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to send</label>
+            <div class="flex items-center h-5 ml:3">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to
+              withdraw</label>
+          </div>
+          <h2 class="text-xl font-medium">Message</h2>
+          <textarea name="" id="" class="w-full mb-2 drop-shadow-2xl h-[100px]">
+
+    </textarea>
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Submit
+            Now</button>
+        </form>
+        <!-- second  -->
+        <form class="max-w-sm mx-auto border-2 border-current border-solid drop-shadow-xl rounded-xl p-6 ">
+          <div class="flex justify-center gap-8 mb-5">
+            <img src="image/Group 3128.png" alt="">
+            <img src="image/Group 2939.png" alt="">
+          </div>
+          <h2 class="bg-gradient-to-r from-[#FED4FF] to-[#E5FFF4] ... p-2 rounded-lg mb-5">Bekash Number +8801778113262
+          </h2>
+          <div class="mb-5">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your
+              name*</label>
+            <input type="name" id="name"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="your name" required />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email*</label>
+            <input type="email" id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="name@flowbite.com" required />
+          </div>
+          <div class="mb-5">
+            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your personal bikas
+              number*</label>
+            <input type="number" id="number"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your number" required />
+          </div>
+          <div class="mb-5">
+            <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount*</label>
+            <input type="amount" id="repeat-password"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your amount" required />
+          </div>
+          <div class="flex items-start mb-5">
+            <div class="flex items-center h-5">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to send</label>
+            <div class="flex items-center h-5 ml:3">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to
+              withdraw</label>
+          </div>
+          <h2 class="text-xl font-medium">Message</h2>
+          <textarea name="" id="" class="w-full mb-2 drop-shadow-2xl h-[100px]">
+
+    </textarea>
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Submit
+            Now</button>
+        </form>
+        <!-- third  -->
+        <form class="max-w-sm mx-auto border-2 border-current border-solid drop-shadow-xl rounded-xl p-6 ">
+          <div class="flex justify-center gap-8 mb-5">
+            <img src="image/ro 1.png" alt="">
+            <img src="image/Group 2939.png" alt="">
+          </div>
+          <h2 class="bg-gradient-to-r from-[#FED4FF] to-[#E5FFF4] ... p-2 rounded-lg mb-5">Bekash Number +8801778113262
+          </h2>
+          <div class="mb-5">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter Your
+              name*</label>
+            <input type="name" id="name"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="your name" required />
+          </div>
+          <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email*</label>
+            <input type="email" id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="name@flowbite.com" required />
+          </div>
+          <div class="mb-5">
+            <label for="number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your personal bikas
+              number*</label>
+            <input type="number" id="number"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your number" required />
+          </div>
+          <div class="mb-5">
+            <label for="amount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Amount*</label>
+            <input type="amount" id="repeat-password"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+              placeholder="Enter your amount" required />
+          </div>
+          <div class="flex items-start mb-5">
+            <div class="flex items-center h-5">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to send</label>
+            <div class="flex items-center h-5 ml:3">
+              <input id="terms" type="checkbox" value=""
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                required />
+            </div>
+            <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I went to
+              withdraw</label>
+          </div>
+          <h2 class="text-xl font-medium">Message</h2>
+          <textarea name="" id="" class="w-full mb-2 drop-shadow-2xl h-[100px]">
+
+    </textarea>
+          <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full">Submit
+            Now</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- course section  -->
+    <section class="my-24">
+      <div class="mb-14">
+        <p class="text-[#5A58E7] font-normal text-lg bg-blue-100 p-2 rounded-2xl w-[200px] text-center">Course</p>
+        <h2 class="text-5xl font-bold">Join our popular course</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- card1  -->
+        <div class="card  bg-base-100 shadow-xl box">
+          <figure><img src="image/Rectangle 26.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Web Design and Development
+            </h2>
+            <hr>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium">12,000 Taka</p>
+              <p class="text-xl font-medium">6 Months</p>
+            </div>
+            <hr>
+            <div class="card-actions justify-between">
+              <button class="btn btn-active btn-primary font-medium text-lg">Take Course <i
+                  class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn bg-transparent text-primary">See Details <i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card2  -->
+        <div class="card  bg-base-100 shadow-xl box">
+          <figure><img src="image/Rectangle 25.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Web Design and Development
+            </h2>
+            <hr>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium">12,000 Taka</p>
+              <p class="text-xl font-medium">6 Months</p>
+            </div>
+            <hr>
+            <div class="card-actions justify-between">
+              <button class="btn btn-active btn-primary font-medium text-lg">Take Course <i
+                  class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn bg-transparent text-primary">See Details <i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card3  -->
+        <div class="card  bg-base-100 shadow-xl box">
+          <figure><img src="image/Rectangle 27.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Web Design and Development
+            </h2>
+            <hr>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium">12,000 Taka</p>
+              <p class="text-xl font-medium">6 Months</p>
+            </div>
+            <hr>
+            <div class="card-actions justify-between">
+              <button class="btn btn-active btn-primary font-medium text-lg">Take Course <i
+                  class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn bg-transparent text-primary">See Details <i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- card4  -->
+        <div class="card  bg-base-100 shadow-xl box">
+          <figure><img src="image/Rectangle 25.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Web Design and Development
+            </h2>
+            <hr>
+            <div class="flex justify-between items-center">
+              <p class="text-xl font-medium">12,000 Taka</p>
+              <p class="text-xl font-medium">6 Months</p>
+            </div>
+            <hr>
+            <div class="card-actions justify-between">
+              <button class="btn btn-active btn-primary font-medium text-lg">Take Course <i
+                  class="fa-solid fa-arrow-right"></i></button>
+              <button class="btn bg-transparent text-primary">See Details <i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- customers section  -->
+    <section class="my-32">
+      <div class="text-center">
+        <p class="text-[#5A58E7] drop-shadow-2xl text-xl font-medium p-3">Financial</p>
+        <h2 class="text-5xl font-bold mb-14">Mobile financial service</h2>
+      </div>
+
+      <div>
+        <div class="hero min-h-screen bg-gradient-to-r from-[#FFEDFB] to-[#FFFFFF] rounded-2xl pl-10">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="tanvir">
+              <img src="image/Frame 1284.png" class=" tanvir  max-w-sm rounded-lg shadow-2xl" />
+            </div>
+            <div>
+              <div class="flex gap-5">
+                <img src="image/Group.png" alt="">
+                <h1 class="text-5xl font-bold">Testomonial</h1>
+              </div>
+              <p class="mt-6 text-lg font-normal">I can't say enough about the outstanding customer service I received from this shop. The
+                staff went above and beyond to assist me with my purchase, ensuring I found exactly what I needed. Their
+                prompt and friendly responses made the shopping experience truly enjoyable. I highly recommend this shop
+                for their commitment to customer satisfaction."</p>
+              <br>
+              <p class="mt-6 text-lg font-normal">"I've been a loyal customer of this shop for years, and they consistently deliver top-notch products.
+                Whether it's the latest trends or classic essentials, their inventory is carefully curated with quality
+                in mind. I can always trust that I'm getting the best value for my money. </p>
+              <br>
+              <h2 class="text-2xl font-medium mt-6">Tanvir Islam Rubel</h2>
+              <p class="tex-lg font-normal">Software Engineer & UX Researcher</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button class="btn btn-outline btn-primary"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+          <button class="btn btn-outline btn-primary">Next <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest project section   -->
+    <section>
+      <div>
+        <p class="text-[#5A58E7] font-normal text-lg bg-blue-100 p-2 rounded-2xl w-[200px] text-center">Project
+        </p>
+        <h2 class="text-5xl font-bold">Our Latest project</h2>
+      </div>
+
+      <div class="row flex flex-col lg:flex-row h-[500px] gap-10 justify-around mt-12">
+        <div>
+            <img src="image/Rectangle 153.png" alt="" class="">
+        </div>
+        <div class="vertical-collage">
+          <img src="image/Group 3007.png" alt="" class="w-[100%] mb-4">
+          <img src="image/Group 3006.png" alt="" class="w-[100%]">
+      </div>
+        <div>
+            <img src="image/Group 3009.png" alt="" class="">
+        </div>  
+    </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
