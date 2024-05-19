@@ -2,8 +2,8 @@
     font-family: "Roboto", sans-serif;
 }
 
-.banner {
-    background-image: url(/image/Group\ 3087.png);
+header {
+    background-image: linear-gradient(to bottom right,#DDEDFF,#F5E4FF,#D8E6FF,#FCF9F1,#FEE2FD);
     padding: 60px;
 }
 
